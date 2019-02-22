@@ -1,0 +1,57 @@
+{
+    "_class": "hudson.model.FreeStyleBuild",
+    "actions": [
+        {
+            "_class": "hudson.model.CauseAction",
+            "causes": [
+                {
+                    "_class": "hudson.triggers.TimerTrigger$TimerTriggerCause",
+                    "shortDescription": "Started by timer"
+                },
+                {
+                    "_class": "hudson.triggers.TimerTrigger$TimerTriggerCause",
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        },
+        {
+            "_class": "jenkins.metrics.impl.TimeInQueueAction",
+            "blockedDurationMillis": 2027137,
+            "blockedTimeMillis": 2027137,
+            "buildableDurationMillis": 55613,
+            "buildableTimeMillis": 55613,
+            "buildingDurationMillis": 194947,
+            "executingTimeMillis": 194947,
+            "executorUtilization": 1.0,
+            "subTaskCount": 0,
+            "waitingDurationMillis": 142,
+            "waitingTimeMillis": 142
+        },
+        {},
+        {},
+        {},
+        {}
+    ],
+    "artifacts": [],
+    "building": false,
+    "description": null,
+    "displayName": "#10618",
+    "duration": 194947,
+    "estimatedDuration": 157077,
+    "executor": null,
+    "fullDisplayName": "CENV_SANITY_WKS_TRANSVERSAL_PAF #10618",
+    "id": "10618",
+    "keepLog": false,
+    "number": 10618,
+    "queueId": 912264,
+    "result": "SUCCESS",
+    "timestamp": 1550560483887,
+    "url": "http://dlnxsdlc01:8183/view/TAF_Check/job/CENV_SANITY_WKS_TRANSVERSAL_PAF/10618/",
+    "builtOn": "",
+    "changeSet": {
+        "_class": "hudson.scm.EmptyChangeLogSet",
+        "items": [],
+        "kind": null
+    },
+    "culprits": []
+}

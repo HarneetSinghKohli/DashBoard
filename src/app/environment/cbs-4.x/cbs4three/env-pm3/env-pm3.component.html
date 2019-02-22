@@ -1,0 +1,26 @@
+<div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                         <div class="Middle_env">PM3</div>
+                
+                        <div class="Middle_stability1" >
+                     
+                            <canvas id="lineChart-pm3" >
+                              {{LineChart}}
+                            </canvas>
+                    
+            </div>
+            
+            <div class="Middle_communication">
+                    <div *ngIf="this.c_data">
+                            <ul>
+                              <li *ngFor="let communication of this.c_data">
+                                <span>{{communication}}</span>
+                              </li>
+                            </ul>
+                        </div>
+            </div>
+            <div class="pie">
+                    <canvas id="pieChart-pm3" ></canvas>
+            </div>
+        </div>
+</div>
