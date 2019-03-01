@@ -1,3 +1,268 @@
-<p>
-  env-pf2-detail works!
-</p>
+<table>
+  <tr>
+    <td valign="top">
+      <table>
+        <tr>
+          <th colspan="2">IAF</th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Show Details:<input type="checkbox" (click)="toggle()"> <br />
+          </td>
+        </tr>
+        <tr *ngIf="show">
+          <div class="new">
+            <th>Domain</th>
+            <th>Group</th>
+        <tr ng-repeat="let x in this.dataModel">
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        </div>
+  </tr>
+</table>
+<!-- </td>
+</tr>
+</table> -->
+
+
+
+    <td valign="top">
+      <table>
+        <tr>
+          <th colspan="2">IAF</th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Show Details:<input type="checkbox" (click)="toggle1()" > <br />
+          </td>
+        </tr>
+        <tr *ngIf="show">
+          <div class="new">
+            <th>Domain</th>
+            <th>Group</th>
+        <tr ng-repeat="let x in this.dataModel">
+          <td>1</td>
+          <td>2</td>
+        </tr>
+        </div>
+  </tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+
+
+<!-- <table>
+  <tr>
+    <td valign="top">
+      <table>
+        <tr>
+          <th colspan="2">IAF</th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div id="piechart_IAF_BE"></div>
+            <br />
+            Show Details: <input type="checkbox" ng-model="showDetailsIAFBE"><br />
+          </td>
+        </tr>
+        <tr ng-hide="!showDetailsIAFBE">
+          <th>Domain</th>
+          <th>Group</th>
+        </tr>
+        <tr ng-repeat="x in jobs_IAF_BE | orderBy:'domain' |filter : domainSelected |filter : filterOnKo"
+          ng-hide="!showDetailsIAFBE">
+          <td class="{{ x.status }}">{{ x.domain }}</td>
+          <td class="{{ x.status }}"><a href="{{ x.url }}">{{ x.name }}</a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table> -->
+
+<!-- <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" *ngFor="let number of [1,2,3,4,5]">
+    <div class="custom_component">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <div class="Middle_env">Test Campaign {{number}}</div>
+
+        <div class="Middle_stability1">Middle Stabilty</div>
+
+        Show Issues :
+        <input type="checkbox" id="1" [ngModel]="filter" (ngModelChange)="onFilterChange($event)"> Checkbox
+
+     <button (click)="onFilterChange($event)">Change Status</button> 
+       <input type="checkbox" (click)="">
+        <div class="ads">Addrress</div> 
+
+      </div>
+    </div>
+  </div>
+
+ -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<div ng-app="myApp" ng-controller="customersCtrl">
+
+    <p>
+        Select a domain: <input type="text" ng-model="domainSelected"><br/>
+        <button ng-click="selectKOOnly('KO')">Click to select only KO</button>
+        <button ng-click="selectKOOnly('')">Click to select All</button>
+        </p>
+
+    <table>
+        <tr>
+            <td valign="top">
+                <table>
+                    <tr>
+                        <th colspan="2">IAF</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div id="piechart_IAF_BE"></div>
+                            <br/>
+                            Show Details: <input type="checkbox" ng-model="showDetailsIAFBE"><br />
+                        </td>
+                    </tr>
+                    <tr ng-hide="!showDetailsIAFBE">
+                        <th>Domain</th>
+                        <th>Group</th>
+                    </tr>
+                    <tr ng-repeat="x in jobs_IAF_BE | orderBy:'domain' |filter : domainSelected |filter : filterOnKo" ng-hide="!showDetailsIAFBE">
+                        <td class="{{ x.status }}">{{ x.domain }}</td>
+                        <td class="{{ x.status }}"><a href="{{ x.url }}">{{ x.name }}</a></td>
+                    </tr>
+                </table>
+            </td>
+            <td valign="top">
+                <table>
+                    <tr>
+                        <th colspan="2">PAF</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div id="piechart_PAF_BE"></div>
+                            <br/>Show Details: <input type="checkbox" ng-model="showDetailsPAFBE"><br />
+                        </td>
+                    </tr>
+                    <tr ng-hide="!showDetailsPAFBE">
+                        <th>Domain</th>
+                        <th>Group</th>
+                    </tr>
+                    <tr ng-repeat="x in jobs_PAF_BE | orderBy:'domain' |filter : domainSelected |filter : filterOnKo" ng-hide="!showDetailsPAFBE">
+                        <td class="{{ x.status }}">{{ x.domain }}</td>
+                        <td class="{{ x.status }}"><a href="{{ x.url }}">{{ x.name }}</a></td>
+                    </tr>
+                </table>
+            </td>
+            <td valign="top">
+                <table>
+                    <tr>
+                        <th colspan="2">TAF</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div id="piechart_TAF_BE"></div>
+                            <br/>Show Details: <input type="checkbox" ng-model="showDetailsTAFBE"><br />
+                        </td>
+                    </tr>
+                    <tr ng-hide="!showDetailsTAFBE">
+                        <th>Domain</th>
+                        <th>Group</th>
+                    </tr>
+                    <tr ng-repeat="x in jobs_TAF_BE | orderBy:'domain' |filter : domainSelected |filter : filterOnKo" ng-hide="!showDetailsTAFBE">
+                        <td class="{{ x.status }}">{{ x.domain }}</td>
+                        <td class="{{ x.status }}"><a href="{{ x.url }}">{{ x.name }}</a></td>
+                    </tr>
+                </table>
+            </td>
+
+            <td valign="top">
+                <table>
+                    <tr>
+                        <th colspan="2">TAF - TPC</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div id="piechart_TAF_TPC_BE"></div>
+                            <br/>Show Details: <input type="checkbox" ng-model="showDetailsTAFTPCBE"><br />
+                        </td>
+                    </tr>
+                    <tr ng-hide="!showDetailsTAFTPCBE">
+                        <th>Domain</th>
+                        <th>Group</th>
+                    </tr>
+                    <tr ng-repeat="x in jobs_TAF_TPC_BE | orderBy:'domain' |filter : domainSelected |filter : filterOnKo"  ng-hide="!showDetailsTAFTPCBE">
+                        <td class="{{ x.status }}">{{ x.domain }}</td>
+                        <td class="{{ x.status }}"><a href="{{ x.url }}">{{ x.name }}</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+
+            <td valign="top">
+                <table>
+                    <tr>
+                        <th colspan="2">TDB-BE</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div id="piechart_TDB_BE"></div>
+                            <br/>Show Details: <input type="checkbox" ng-model="showDetailsTDBBE"><br />
+                        </td>
+                    </tr>
+                    <tr ng-hide="!showDetailsTDBBE">
+                        <th>Domain</th>
+                        <th>Group</th>
+                    </tr>
+                    <tr ng-repeat="x in jobs_TDB_BE | orderBy:'domain' |filter : domainSelected |filter : filterOnKo" ng-hide="!showDetailsTDBBE">
+                        <td class="{{ x.status }}">{{ x.domain }}</td>
+                        <td class="{{ x.status }}"><a href="{{ x.url }}">{{ x.name }}</a></td>
+                    </tr>
+                </table>
+            </td>
+
+
+            <td valign="top">
+                <table>
+                    <tr>
+                        <th colspan="2">TDB-NL</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div id="piechart_TDB_NL"></div>
+                            <br/>Show Details: <input type="checkbox" ng-model="showDetailsTDBNL"><br />
+                        </td>
+                    </tr>
+                    <tr ng-hide="!showDetailsTDBNL">
+                        <th>Domain</th>
+                        <th>Group</th>
+                    </tr>
+                    <tr ng-repeat="x in jobs_TDB_NL | orderBy:'domain' |filter : domainSelected |filter : filterOnKo" ng-hide="!showDetailsTDBNL">
+                        <td class="{{ x.status }}">{{ x.domain }}</td>
+                        <td class="{{ x.status }}"><a href="{{ x.url }}">{{ x.name }}</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+</div>
+<span id="demo"></span>
+
+<script src="piechart.js"></script>
+<script src="angular.js"></script>
+
+
+</body>
+</html> -->

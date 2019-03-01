@@ -8,7 +8,7 @@ import {Env3xComponent1} from './environment/cbs-3.x/env-pf2/3x1.component';
 import {Env3xComponent2} from './environment/cbs-3.x/env-tf2/3x2.component';
 import {HttpClientModule} from '@angular/common/http';
 import {CommunicationService} from './environment/cbs-3.x/3x.service';
-
+import {detailsService} from './environment/cbs-3.x/env-pf2-detail/env-pf2-detail.service'
 import { Cbs4oneComponent } from './environment/cbs-4.x/cbs4one/cbs4one.component';
 import { Cbs4twoComponent } from './environment/cbs-4.x/cbs4two/cbs4two.component';
 import { Cbs4threeComponent } from './environment/cbs-4.x/cbs4three/cbs4three.component';
@@ -23,6 +23,8 @@ import {EnvPm3Component} from './environment/cbs-4.x/cbs4three/env-pm3/env-pm3.c
 import {EnvTm3Component} from './environment/cbs-4.x/cbs4three/env-tm3/env-tm3.component';
 import { EnvPf2DetailComponent } from './environment/cbs-3.x/env-pf2-detail/env-pf2-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import {RouterModule} from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -49,11 +51,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     AppRoutingModule
     
   ],
-  providers: [CommunicationService],
+  providers: [CommunicationService, detailsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

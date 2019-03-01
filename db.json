@@ -1,25 +1,378 @@
 {
-  "posts": [
+  "env": [
     {
-      "timeStamp": 20180802073316,
+      "env_link": "http://localhost:3000/posts1"
+    },
+    {
+      "env_link": "http://localhost:3000/posts2"
+    },
+    {
+      "env_link": "http://localhost:3000/posts3"
+    },
+    {
+      "env_link": "http://localhost:3000/posts4"
+    }
+  ],
+  "stream_F2": [
+    {
+      "Stream": "PF2",
+      "Stability": "jSON urL1",
+      "Communication": "Json url2",
+      "TestCampaign": "Json url3"
+    },
+    {
+      "Stream": "TF2",
+      "Stability": "jSON urL4",
+      "Communication": "Json url5",
+      "TestCampaign": "Json url6"
+    }
+  ],
+  "stream_AF": [
+    {
+      "Stream": "TAF",
+      "Stability": "jSON urL1",
+      "Communication": "Json url2",
+      "TestCampaign": "Json url3"
+    },
+    {
+      "Stream": "PAF",
+      "Stability": "jSON urL4",
+      "Communication": "Json url5",
+      "TestCampaign": "Json url6"
+    },
+    {
+      "Stream": "IAF",
+      "Stability": "jSON urL4",
+      "Communication": "Json url5",
+      "TestCampaign": "Json url6"
+    }
+  ],
+  "stream_DB": [
+    {
+      "Stream": "IDB",
+      "Stability": "jSON urL1",
+      "Communication": "Json url2",
+      "TestCampaign": "Json url3"
+    },
+    {
+      "Stream": "PDB",
+      "Stability": "jSON urL4",
+      "Communication": "Json url5",
+      "TestCampaign": "Json url6"
+    },
+    {
+      "Stream": "TDB",
+      "Stability": "jSON urL4",
+      "Communication": "Json url5",
+      "TestCampaign": "Json url6"
+    }
+  ],
+  "stream_M3": [
+    {
+      "Stream": "IM3",
+      "Stability": "jSON urL1",
+      "Communication": "Json url2",
+      "TestCampaign": "Json url3"
+    },
+    {
+      "Stream": "PM3",
+      "Stability": "jSON urL4",
+      "Communication": "Json url5",
+      "TestCampaign": "Json url6"
+    },
+    {
+      "Stream": "TM3",
+      "Stability": "jSON urL4",
+      "Communication": "Json url5",
+      "TestCampaign": "Json url6"
+    }
+  ],
+  "streamPF2_data": [
+    {
+      "timeStamp": "0105",
       "status": 1,
       "total": 1
     },
     {
-      "timeStamp": 20180802075316,
+      "timeStamp": "0115",
       "status": 0,
       "total": 1
     },
     {
-      "timeStamp": 20180802073356,
+      "timeStamp": "0125",
       "status": 1,
       "total": 1
     },
     {
-      "timeStamp": 20180802044316,
+      "timeStamp": "0135",
       "status": 0,
+      "total": 1
+    },
+    {
+      "timeStamp": "0145",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0155",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0205",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0215",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0225",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0235",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0245",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0255",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0355",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0305",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0315",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0325",
+      "status": 0,
+      "total": 1
+    },
+    {
+      "timeStamp": "0335",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0345",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0355",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0405",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0415",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0425",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0435",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0445",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0455",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0505",
+      "status": 1,
       "total": 1
     }
+  ],
+  "streamTF2_data": [
+    {
+      "timeStamp": "0105",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0115",
+      "status": 0,
+      "total": 1
+    },
+    {
+      "timeStamp": "0125",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0135",
+      "status": 0,
+      "total": 1
+    },
+    {
+      "timeStamp": "0145",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0155",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0205",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0215",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0225",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0235",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0245",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0255",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0355",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0305",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0315",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0325",
+      "status": 0,
+      "total": 1
+    },
+    {
+      "timeStamp": "0335",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0345",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0355",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0405",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0415",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0425",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0435",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0445",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0455",
+      "status": 1,
+      "total": 1
+    },
+    {
+      "timeStamp": "0505",
+      "status": 1,
+      "total": 1
+    }
+  ],
+  "stream_PF2_communication": [
+    {
+      "communication": "This is my communication"
+    }
+  ],
+  "stream_TF2_communication": [
+    {
+      "communication": "This is my communication"
+    }
+  ],
+  "checkbox_data": [
+    {
+      "id": 1,
+      "status": "ok",
+      "domain": "BM",
+      "url": "ur" 
+    },
+    {
+      "id": 2,
+      "status": "ko",
+      "domain": "AM",
+      "url": "ur" 
+    }
   ]
-
 }

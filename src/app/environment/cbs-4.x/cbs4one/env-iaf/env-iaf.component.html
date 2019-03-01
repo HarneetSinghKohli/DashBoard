@@ -1,28 +1,28 @@
 <div class="row">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     
-        <div class="Middle_env">IAF</div>
-       
+        <div class="Middle_env">{{this.env}}</div>
+        <div class="Middle_communication">
+                        <div *ngIf="this.c_data">
+                                <ul>
+                                  <li *ngFor="let communication of this.c_data">
+                                    <span>{{communication}}</span>
+                                  </li>
+                                </ul>
+                            </div>
+                </div>
+                
+                <div class="pie">
+                        <canvas id="pieChart-iaf"></canvas>
+                </div>
         <div class="Middle_stability1" >
                  
-                <canvas id="lineChart4" >
+                <canvas id="lineChart-iaf" >
                      {{LineChart}}
                 </canvas>
                 
         </div>
        
-        <div class="Middle_communication">
-                <div *ngIf="this.c_data">
-                        <ul>
-                          <li *ngFor="let communication of this.c_data">
-                            <span>{{communication}}</span>
-                          </li>
-                        </ul>
-                    </div>
-        </div>
-        
-        <div class="pie">
-                <canvas id="pieChart4"></canvas>
-        </div>
+ 
 </div>
 </div>

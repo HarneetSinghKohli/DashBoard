@@ -1,8 +1,54 @@
-<h3>Top Heroes</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let hero of heroes" class="col-1-4">
-    <div class="module hero">
-      <h4>{{hero.name}}</h4>
+<!-- <div>
+  Hello
+</div> -->
+
+
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <app-env3x></app-env3x>
     </div>
-  </a>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <app-cbs4one></app-cbs4one>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <app-cbs4two></app-cbs4two>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <app-cbs4three></app-cbs4three>
+    </div>
+  </div>
 </div>
+<!-- <<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" *ngFor="let number of arr1, let x1=index">
+      <div class="custom_component">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="row">
+            <div *ngFor="let x1 of ' ' .repeat(arr2[x1]).split(''), let x=index">
+                <div class="custom_component">
+                    <div class="Middle_env">Test Campaign {{number}}</div>
+  
+                    <div class="Middle_stability1">Middle Stabilty {{num}}</div>
+  
+                    Show Issues :
+                    <input type="checkbox" id="1" [ngModel]="filter" (ngModelChange)="onFilterChange($event)"> Checkbox
+                  
+                  <div class="Middle_stability1">
+			
+                      <canvas id="lineChart1">
+                        {{LineChart}}
+                      </canvas>
+                
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  -->
+

@@ -1,37 +1,14 @@
 div.custom_env{
-    margin: 10px;
-    min-height: 300px;
-    font-size: 20px;
+    margin: 5px;
+    font-size: 15px;
     border-style: solid;
+    
+    }
+    .stream{
+        text-align: right;
+        font-size: 10px;
     }
 
-div.upper_corner{
-    text-align: right;
-}
-
-div.Middle_env{
-    text-align: center;
-}
-
-div.custom_inner_env{
-    margin: 10px;
-    min-height: 240px;
-    font-size: 20px;
-    border-style: solid;
-}
-
-div.Middle_stability{
-    text-align: center;
-    min-height: 50px;
-    border-style: dotted;
-    margin:5px;
-}
-div.Middle_communication{
-    text-align: center;
-    min-height: 50px;
-    border-style: dotted;
-    margin:5px;
-}
 
 
 
